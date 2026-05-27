@@ -11,4 +11,61 @@ body {
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
+    font-size: 18px;
+    margin: 5rem auto;
+    max-width: 900px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.highlight--orange {
+    color: #ff5722;
+}
+
+.highlight--blue {
+    color: #2128f3;
+}
+
+.hero {
+    margin-bottom: 5rem;
+}
+
+.hero__avatar-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero__avatar {
+    --size: 150px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+}
+
+.hero__availability {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero__availability:hover {
+    background-color: #45a049;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero__description {
+    font-size: 1.2rem;
+    max-width: 620px;
 }

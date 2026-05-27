@@ -44,6 +44,7 @@ body {
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
+    border: 5px solid #ff5722;
 }
 
 .hero__availability {

@@ -84,11 +84,29 @@ body {
 .experience-card {
     max-width: 90%;
     margin: 0 auto;
+
+    border-left: 2px solid #ff5722;
+    padding-left: 2.6%;
 }
 
 .experience-card__title {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.experience-card__title::after {
+    --size: 15px;
+    content: '';
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    background-color: #ff5722;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -3%;
+    transform: translate(-50%, -50%);
 }
 
 .experience-card__role {
@@ -109,6 +127,10 @@ body {
 
 .experience-card__task-item {
     margin-bottom: 0.5rem;
+}
+
+.experience-card__task-item:last-child {
+    margin-bottom: 0;
 }
 
 .project-card {
@@ -140,4 +162,24 @@ body {
 
 .project-card__link:hover {
     background-color: #e64a19;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about__paragraph {
+    margin-bottom: 1rem;
+}
+
+.about__image {
+    --size: 250px;
+    width: var(--size);
+    height: var(--size);
+    object-fit: cover;
+    border-radius: 10px;
+    transform: rotate(5deg);
+    border: 5px solid #ff5722;
 }

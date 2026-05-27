@@ -69,3 +69,44 @@ body {
     font-size: 1.2rem;
     max-width: 620px;
 }
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+
+.experience-card {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.experience-card__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-card__role {
+    font-style: italic;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.experience-card__date {
+    color: #ff5722;
+}
+
+.experience-card__tasks {
+    list-style-type: disc;
+    padding-left: 1.75rem;
+}
+
+.experience-card__task-item {
+    margin-bottom: 0.5rem;
+}

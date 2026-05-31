@@ -29,6 +29,41 @@ body {
     color: #2128f3;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: 100vh;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.navbar__link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    width: 100%;
+}
+
+.navbar__link:hover {
+    color: #ff5722;
+    background-color: rgba(255, 87, 34, 0.1);
+    border-radius: 5px;
+}
+
 .hero {
     margin-bottom: 5rem;
 }

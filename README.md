@@ -1,6 +1,4 @@
 # Portfolio
-![Etiqueta de "trabajo en progreso"](https://img.shields.io/badge/Status-Work_in_Progress-red)
-
 Página web para mostrar quién soy y mis proyectos.
 
 ## 📸 Vista previa

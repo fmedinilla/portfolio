@@ -3,7 +3,6 @@
         "name": "SimRadio",
         "description": "Entorno web para la simulación de pruebas a transceptores radio en Rx.",
         "image": "images/simradio.png",
-        "url": "https://example.com/project1",
         "tags": [ "HTML", "CSS", "JavaScript" ],
         "links": [
             { "name": "Codigo", "url": "https://github.com/fmedinilla/simradio" },

@@ -1,0 +1,13 @@
+[
+    {
+        "name": "SimRadio",
+        "description": "Entorno web para la simulación de pruebas a transceptores radio en Rx.",
+        "image": "images/simradio.png",
+        "tags": [ "HTML", "CSS", "JavaScript" ],
+        "links": [
+            { "name": "Codigo", "url": "https://github.com/fmedinilla/simradio" },
+            { "name": "Preview", "url": "https://entrenamientorta.netlify.app/" },
+            { "name": "Documentacion", "url": "https://github.com/fmedinilla/simradio/blob/main/docs/simradio.md" }
+        ]
+    }
+]

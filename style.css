@@ -182,6 +182,20 @@ body {
     border-radius: 10px;
 }
 
+.project-card__tags {
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+.project-card__tag {
+    background-color: #282828;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
 .project-card__links {
     margin-top: 1rem;
     display: flex;

@@ -7,7 +7,14 @@ function createProjectLink(url, text) {
     return $link;
 }
 
-function createProjectCard({ name, description, image, links }) {
+function createProjectTag(text) {
+    const $tag = document.createElement("span");
+    $tag.classList.add("project-card__tag");
+    $tag.textContent = text;
+    return $tag;
+}
+
+function createProjectCard({ name, description, image, links, tags }) {
     const $card = document.createElement("article");
     $card.classList.add("project-card");
 
@@ -29,6 +36,14 @@ function createProjectCard({ name, description, image, links }) {
     $description.classList.add("project-card__description");
     $description.textContent = description;
     $cardContent.appendChild($description);
+
+    const $tags = document.createElement("div");
+    $tags.classList.add("project-card__tags");
+    tags.forEach(tag => {
+        const $tag = createProjectTag(tag);
+        $tags.appendChild($tag);
+    });
+    $cardContent.appendChild($tags);
 
     const $links = document.createElement("div");
     $links.classList.add("project-card__links");

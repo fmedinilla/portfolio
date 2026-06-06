@@ -1,4 +1,5 @@
 {
+    "home": "Home",
     "available": "Open to work",
     "greeting": "Hi, I'm <span class=\"highlight highlight--orange\">Fran</span>!",
     "description": "<span class=\"highlight\">Student</span> of the Bachelor's Degree in Computer Engineering at <span class=\"highlight highlight--blue\">UOC</span>. Specialized in <span class=\"highlight\">Web Development</span> and <span class=\"highlight\">Computer Engineering</span>.",

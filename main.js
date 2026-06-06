@@ -96,6 +96,13 @@ function load(lang) {
     fetch(`data.${lang}.json`)
         .then(response => response.json())
         .then(data => {
+            // NAVBAR
+            const $navbar = document.querySelector(".navbar__list");
+            $navbar.children[0].children[0].textContent = data.home;
+            $navbar.children[1].children[0].textContent = data["experience_title"];
+            $navbar.children[2].children[0].textContent = data["projects_title"];
+            $navbar.children[3].children[0].textContent = data["about_title"];
+
             const $available = document.querySelector(".hero__availability");
             $available.textContent = data.available;
 

@@ -1,4 +1,5 @@
 {
+    "home": "Startseite",
     "available": "Verfügbar für Arbeit",
     "greeting": "Hallo, ich bin <span class=\"highlight highlight--orange\">Fran</span>!",
     "description": "<span class=\"highlight\">Student</span> des Studiengangs Technische Informatik an der <span class=\"highlight highlight--blue\">UOC</span>. Spezialisiert auf <span class=\"highlight\">Webentwicklung</span> und <span class=\"highlight\">Computer-Engineering</span>.",

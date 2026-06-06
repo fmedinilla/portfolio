@@ -50,7 +50,7 @@ function createProjectCard({ name, description, image, links, tags }) {
     links.forEach(element => {
         const $link = createProjectLink(element.url, element.name);
         $links.appendChild($link);
-    }); 
+    });
     $cardContent.appendChild($links);
 
     $card.appendChild($cardContent);
@@ -92,39 +92,96 @@ function createExperienceCard({ title, date, role, tasks }) {
     return $card;
 }
 
-const userLang = navigator.language || navigator.userLanguage || "en"; 
-const lang = userLang.split('-')[0]; 
+function load(lang) {
+    fetch(`data.${lang}.json`)
+        .then(response => response.json())
+        .then(data => {
+            const $available = document.querySelector(".hero__availability");
+            $available.textContent = data.available;
 
-fetch(`data.${lang}.json`)
-    .then(response => response.json())
-    .then(data => {
-        const $available = document.querySelector(".hero__availability");
-        $available.textContent = data.available;
+            const $greeting = document.querySelector(".hero__title");
+            $greeting.innerHTML = data.greeting;
 
-        const $greeting = document.querySelector(".hero__title");
-        $greeting.innerHTML = data.greeting;
+            const $description = document.querySelector(".hero__description");
+            $description.innerHTML = data.description;
 
-        const $description = document.querySelector(".hero__description");
-        $description.innerHTML = data.description;
 
-        const $experienceList = document.getElementById("experiencia");
-        data.experience.forEach(exp => {
-            const $experienceItem = createExperienceCard(exp);
-            $experienceList.appendChild($experienceItem);
-        });
+            // EXPERIENCE
+            const $experienceList = document.getElementById("experiencia");
+            $experienceList.innerHTML = "";
 
-        const $projectList = document.getElementById("project-list");
-        data.projects.forEach(project => {
-            const $card = createProjectCard(project);
-            $projectList.appendChild($card);
-        });
+            const $experienceTitle = document.createElement("h2");
+            $experienceTitle.classList.add("section__title");
+            $experienceTitle.textContent = data["experience_title"];
+            $experienceList.appendChild($experienceTitle);
+            data.experience.forEach(exp => {
+                const $experienceItem = createExperienceCard(exp);
+                $experienceList.appendChild($experienceItem);
+            });
 
-        const $aboutMe = document.querySelector(".about__text-content");
-        data.aboutme.forEach(paragraph => {
-            const $paragraph = document.createElement("p");
-            $paragraph.classList.add("about__paragraph");
-            $paragraph.textContent = paragraph;
-            $aboutMe.appendChild($paragraph);
-        });
-    })
-    .catch(error => console.error("Error fetching data:", error));
+
+            // PROJECTS
+            const $projects = document.getElementById("proyectos");
+            $projects.innerHTML = "";
+
+            const $projectTitle = document.createElement("h2");
+            $projectTitle.classList.add("section__title");
+            $projectTitle.textContent = data["projects_title"];
+            $projects.appendChild($projectTitle);
+
+            const $projectList = document.createElement("div");
+            $projectList.classList.add("project-list");
+            $projects.appendChild($projectList);
+
+            data.projects.forEach(project => {
+                const $card = createProjectCard(project);
+                $projectList.appendChild($card);
+            });
+
+
+            // ABOUT ME
+            const $aboutMe = document.getElementById("sobre-mi");
+            $aboutMe.innerHTML = "";
+
+            const $aboutTitle = document.createElement("h2");
+            $aboutTitle.classList.add("section__title");
+            $aboutTitle.textContent = data["about_title"];
+            $aboutMe.appendChild($aboutTitle);
+
+            const $about = document.createElement("article");
+            $about.classList.add("about");
+            $aboutMe.appendChild($about);
+
+            const $aboutContent = document.createElement("div");
+            $aboutContent.classList.add("about__text-content");
+            $about.appendChild($aboutContent);
+
+            data.aboutme.forEach(paragraph => {
+                const $paragraph = document.createElement("p");
+                $paragraph.classList.add("about__paragraph");
+                $paragraph.textContent = paragraph;
+                $aboutContent.appendChild($paragraph);
+            });
+
+            const $aboutImg = document.createElement("img");
+            $aboutImg.classList.add("about__image");
+            $aboutImg.src = "images/yo.jpg";
+            $aboutImg.alt = "About Me Image";
+            $about.appendChild($aboutImg);
+        })
+        .catch(error => console.error("Error fetching data:", error));
+}
+
+const userLang = navigator.language || navigator.userLanguage || "en";
+const lang = userLang.split('-')[0];
+
+document.addEventListener("DOMContentLoaded", () => load(lang));
+
+const $langSelect = document.getElementById("lang-select");
+$langSelect.value = lang;
+
+$langSelect.addEventListener("change", (event) => {
+    const selectedLang = event.target.value;
+    load(selectedLang);
+});
+

@@ -2,6 +2,7 @@
     "available": "Open to work",
     "greeting": "Hi, I'm <span class=\"highlight highlight--orange\">Fran</span>!",
     "description": "<span class=\"highlight\">Student</span> of the Bachelor's Degree in Computer Engineering at <span class=\"highlight highlight--blue\">UOC</span>. Specialized in <span class=\"highlight\">Web Development</span> and <span class=\"highlight\">Computer Engineering</span>.",
+    "experience_title": "Experience",
     "experience": [
         {
             "title": "Air and Space Army",
@@ -14,6 +15,7 @@
             ]
         }
     ],
+    "projects_title": "Projects",
     "projects": [
         {
             "name": "SimRadio",
@@ -40,6 +42,7 @@
             ]
         }
     ],
+    "about_title": "About me",
     "aboutme": [
         "My name is Francisco Medinilla and I am a student of the Bachelor's Degree in Computer Engineering at UOC. I started in the programming world with the Scratch cat. From there, I took a big leap to one of the most loved and at the same time most hated programming languages, C++.",
         "It was in C++ where I acquired solid knowledge regarding programming and problem-solving. I understood that language is just the way of writing, but programming logic is what truly matters.",

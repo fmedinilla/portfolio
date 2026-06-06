@@ -2,6 +2,7 @@
     "available": "Verfügbar für Arbeit",
     "greeting": "Hallo, ich bin <span class=\"highlight highlight--orange\">Fran</span>!",
     "description": "<span class=\"highlight\">Student</span> des Studiengangs Technische Informatik an der <span class=\"highlight highlight--blue\">UOC</span>. Spezialisiert auf <span class=\"highlight\">Webentwicklung</span> und <span class=\"highlight\">Computer-Engineering</span>.",
+    "experience_title": "Erfahrung",
     "experience": [
         {
             "title": "Luft- und Weltraumstreitkräfte",
@@ -14,6 +15,7 @@
             ]
         }
     ],
+    "projects_title": "Projekte",
     "projects": [
         {
             "name": "SimRadio",
@@ -40,6 +42,7 @@
             ]
         }
     ],
+    "about_title": "Über mich",
     "aboutme": [
         "Mein Name ist Francisco Medinilla und ich bin Student des Studiengangs Technische Informatik an der UOC. Ich habe meine Reise in die Welt der Programmierung mit der Scratch-Katze begonnen. Von dort aus machte ich einen großen Sprung zu einer der am meisten geliebten und gleichzeitig am meisten gehassten Programmiersprachen: C++.",
         "In C++ habe ich mir solide Kenntnisse in der Programmierung und Problemlösung angeeignet. Ich habe verstanden, dass die Sprache nur die Art und Weise des Schreibens ist, aber die Programmierlogik das ist, worauf es wirklich ankommt.",

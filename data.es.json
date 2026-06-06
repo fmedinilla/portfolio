@@ -2,6 +2,7 @@
     "available": "Disponible para trabajar",
     "greeting": "Hola, soy <span class=\"highlight highlight--orange\">Fran</span>!",
     "description": "<span class=\"highlight\">Estudiante</span> del Grado en Ingeniería Informática en la <span class=\"highlight highlight--blue\">UOC</span>. Especializado en <span class=\"highlight\">Desarrollo Web</span> y en <span class=\"highlight\">Ingeniería de Computadores</span>.",
+    "experience_title": "Experiencia",
     "experience": [
         {
             "title": "Ejercito del Aire y del Espacio ",
@@ -14,6 +15,7 @@
             ]
         }
     ],
+    "projects_title": "Proyectos",
     "projects": [
         {
             "name": "SimRadio",
@@ -40,6 +42,7 @@
             ]
         }
     ],
+    "about_title": "Sobre mí",
     "aboutme": [
         "Mi nombre es Francisco Medinilla y soy un estudiante del Grado en Ingeniería Informática en la UOC. Empecé en el mundo de la programación con el gatito de scratch. De aquí, dí un gran salto a uno de los lenguajes de programación más queridos y a la vez más odiados, C++.",
         "Fue en C++ donde adquirí conocimientos sólidos referentes a la programación y resolución de problemas. Entendí que el lenguaje es la forma de escribir pero la lógica de la programación es lo que realmente importa.",

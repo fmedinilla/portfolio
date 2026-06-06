@@ -64,6 +64,62 @@ body {
     border-radius: 5px;
 }
 
+.lang-select {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  /* Elimina el estilo por defecto del navegador */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Dimensiones y Espaciado */
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 500;
+  
+  /* Colores y Bordes */
+  color: #333333;
+  background-color: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  
+  /* Icono de flecha personalizado (usando un SVG en línea) */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%234a5568' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  
+  /* Animación y comportamiento */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.lang-select:hover {
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+}
+
+/* Efecto cuando el select está activo/enfocado (Focus) */
+.lang-select:focus {
+  outline: none;
+  border-color: #3b82f6; /* Azul moderno, puedes cambiarlo por tu color corporativo */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Estilo para las opciones del menú desplegable */
+.lang-select__item {
+  color: #333333;
+  background-color: #ffffff;
+  padding: 0.5rem;
+}
+
 .hero {
     margin-bottom: 5rem;
 }

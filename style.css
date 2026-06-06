@@ -211,6 +211,7 @@ body {
 
 .experience-card__date {
     color: #ff5722;
+    margin-left: 0.5rem;
 }
 
 .experience-card__tasks {

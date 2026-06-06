@@ -14,9 +14,7 @@ body {
     line-height: 1.6;
     font-size: 18px;
     margin: 5rem auto;
-    max-width: 900px;
-
-    margin-left: 12rem;
+    max-width: 725px;
 }
 
 .highlight {

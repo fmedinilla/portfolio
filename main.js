@@ -57,14 +57,74 @@ function createProjectCard({ name, description, image, links, tags }) {
     return $card;
 }
 
-fetch("projects.json")
+function createExperienceCard({ title, date, role, tasks }) {
+    const $card = document.createElement("div");
+    $card.classList.add("experience-card");
+
+    const $title = document.createElement("h3");
+    $title.classList.add("experience-card__title");
+    $title.textContent = title;
+
+    const $date = document.createElement("span");
+    $date.classList.add("experience-card__date");
+    $date.textContent = date;
+
+    $title.appendChild($date);
+    $card.appendChild($title);
+
+    const $role = document.createElement("p");
+    $role.classList.add("experience-card__role");
+    $role.textContent = role;
+    $card.appendChild($role);
+
+    const $taskList = document.createElement("ul");
+    $taskList.classList.add("experience-card__tasks");
+
+    tasks.forEach(task => {
+        const $taskItem = document.createElement("li");
+        $taskItem.classList.add("experience-card__task-item");
+        $taskItem.textContent = task;
+        $taskList.appendChild($taskItem);
+    });
+
+    $card.appendChild($taskList);
+
+    return $card;
+}
+
+const userLang = navigator.language || navigator.userLanguage || "en"; 
+const lang = userLang.split('-')[0]; 
+
+fetch(`data.${lang}.json`)
     .then(response => response.json())
     .then(data => {
+        const $available = document.querySelector(".hero__availability");
+        $available.textContent = data.available;
+
+        const $greeting = document.querySelector(".hero__title");
+        $greeting.innerHTML = data.greeting;
+
+        const $description = document.querySelector(".hero__description");
+        $description.innerHTML = data.description;
+
+        const $experienceList = document.getElementById("experiencia");
+        data.experience.forEach(exp => {
+            const $experienceItem = createExperienceCard(exp);
+            $experienceList.appendChild($experienceItem);
+        });
+
         const $projectList = document.getElementById("project-list");
-        data.forEach(project => {
+        data.projects.forEach(project => {
             const $card = createProjectCard(project);
             $projectList.appendChild($card);
         });
-    })
-    .catch(error => console.error("Error fetching projects:", error));
 
+        const $aboutMe = document.querySelector(".about__text-content");
+        data.aboutme.forEach(paragraph => {
+            const $paragraph = document.createElement("p");
+            $paragraph.classList.add("about__paragraph");
+            $paragraph.textContent = paragraph;
+            $aboutMe.appendChild($paragraph);
+        });
+    })
+    .catch(error => console.error("Error fetching data:", error));

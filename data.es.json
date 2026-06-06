@@ -1,0 +1,49 @@
+{
+    "available": "Disponible para trabajar",
+    "greeting": "Hola, soy <span class=\"highlight highlight--orange\">Fran</span>!",
+    "description": "<span class=\"highlight\">Estudiante</span> del Grado en Ingeniería Informática en la <span class=\"highlight highlight--blue\">UOC</span>. Especializado en <span class=\"highlight\">Desarrollo Web</span> y en <span class=\"highlight\">Ingeniería de Computadores</span>.",
+    "experience": [
+        {
+            "title": "Ejercito del Aire y del Espacio ",
+            "date": "Junio 22 - Actual",
+            "role": "Auxiliar de Electrónica",
+            "tasks": [
+                "Coordinador de informática y usuarios",
+                "Entrenador técnico para el personal nuevo",
+                "Reparación y mantenimiento de equipos de radio"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "SimRadio",
+            "description": "Entorno web para la simulación de pruebas a transceptores radio en Rx.",
+            "image": "images/simradio.png",
+            "tags": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "links": [
+                {
+                    "name": "Codigo",
+                    "url": "https://github.com/fmedinilla/simradio"
+                },
+                {
+                    "name": "Preview",
+                    "url": "https://entrenamientorta.netlify.app/"
+                },
+                {
+                    "name": "Documentacion",
+                    "url": "https://github.com/fmedinilla/simradio/blob/main/docs/simradio.md"
+                }
+            ]
+        }
+    ],
+    "aboutme": [
+        "Mi nombre es Francisco Medinilla y soy un estudiante del Grado en Ingeniería Informática en la UOC. Empecé en el mundo de la programación con el gatito de scratch. De aquí, dí un gran salto a uno de los lenguajes de programación más queridos y a la vez más odiados, C++.",
+        "Fue en C++ donde adquirí conocimientos sólidos referentes a la programación y resolución de problemas. Entendí que el lenguaje es la forma de escribir pero la lógica de la programación es lo que realmente importa.",
+        "Surgió en mi la necesidad de aprender sobre el desarrollo web. Así, aprendí sus tecnologías de forma autodidacta y decidí cursar asignaturas optativas en la carrera referentes al Desarrollo Web.",
+        "Tengo el corazon dividido entre mi pasión por los computadores (y la programación a bajo nivel) y el desarrollo web. Unir ambos mundos es la forma en que quiero contribuir al mundo de la tecnología."
+    ]
+}

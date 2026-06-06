@@ -1,0 +1,49 @@
+{
+    "available": "Verfügbar für Arbeit",
+    "greeting": "Hallo, ich bin <span class=\"highlight highlight--orange\">Fran</span>!",
+    "description": "<span class=\"highlight\">Student</span> des Studiengangs Technische Informatik an der <span class=\"highlight highlight--blue\">UOC</span>. Spezialisiert auf <span class=\"highlight\">Webentwicklung</span> und <span class=\"highlight\">Computer-Engineering</span>.",
+    "experience": [
+        {
+            "title": "Luft- und Weltraumstreitkräfte",
+            "date": "Juni 22 - Heute",
+            "role": "Assistent für Elektronik",
+            "tasks": [
+                "Koordinator für IT und Benutzer",
+                "Technischer Trainer für neues Personal",
+                "Reparatur und Wartung von Funkgeräten"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "SimRadio",
+            "description": "Webumgebung für die Simulation von Tests an Funktransceivern im Empfangsmodus (Rx).",
+            "image": "images/simradio.png",
+            "tags": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "links": [
+                {
+                    "name": "Code",
+                    "url": "https://github.com/fmedinilla/simradio"
+                },
+                {
+                    "name": "Vorschau",
+                    "url": "https://entrenamientorta.netlify.app/"
+                },
+                {
+                    "name": "Dokumentation",
+                    "url": "https://github.com/fmedinilla/simradio/blob/main/docs/simradio.md"
+                }
+            ]
+        }
+    ],
+    "aboutme": [
+        "Mein Name ist Francisco Medinilla und ich bin Student des Studiengangs Technische Informatik an der UOC. Ich habe meine Reise in die Welt der Programmierung mit der Scratch-Katze begonnen. Von dort aus machte ich einen großen Sprung zu einer der am meisten geliebten und gleichzeitig am meisten gehassten Programmiersprachen: C++.",
+        "In C++ habe ich mir solide Kenntnisse in der Programmierung und Problemlösung angeeignet. Ich habe verstanden, dass die Sprache nur die Art und Weise des Schreibens ist, aber die Programmierlogik das ist, worauf es wirklich ankommt.",
+        "In mir entstand das Bedürfnis, Webentwicklung zu lernen. So habe ich mir die Technologien autodidaktisch beigebracht und beschlossen, entsprechende Wahlfächer im Studium zu belegen.",
+        "Mein Herz ist geteilt zwischen meiner Leidenschaft für Computer (und Low-Level-Programmierung) und der Webentwicklung. Beide Welten zu vereinen, ist meine Art, wie ich zur Welt der Technologie beitragen möchte."
+    ]
+}
